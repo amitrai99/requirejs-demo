@@ -1,11 +1,11 @@
 requirejs-demo
 ==============
 
-AMD and requirejs example.
+AMD and requirejs sample.
 
-As of now (2013) JavaScript does not allow us to define and create modules natively using some ECMAScript API.
-
-AMD (Asynchronous Module Definition) is a JavaScript API for defining and loading JS modules in an asyncronous way. 
+As of now (2013) JavaScript does not allow us to define and create modules natively using any ECMAScript API.
+[AMD] (https://github.com/amdjs/amdjs-api/wiki/AMD) (Asynchronous Module Definition) was created to provide a standard API 
+for defining and loading JS modules asynchronously. It is more suited for browser based environment.
 
 RequireJS implements the AMD API.
 
@@ -48,3 +48,4 @@ Example using the config object:
 
 * [RequireJS API] (http://requirejs.org/docs/api.html)
 * [RequireJS] (http://requirejs.org/docs/api.html#data-main)
+* [AMD] (https://github.com/amdjs/amdjs-api/wiki/AMD)
