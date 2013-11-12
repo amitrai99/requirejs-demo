@@ -1,4 +1,4 @@
-requirejs-demo
+Requirejs demo
 ==============
 
 AMD and requirejs sample.
