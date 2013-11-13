@@ -7,7 +7,9 @@ As of now (2013) JavaScript does not allow us to define and create modules nativ
 [AMD] (https://github.com/amdjs/amdjs-api/wiki/AMD) (Asynchronous Module Definition) was created to provide a standard API 
 for defining and loading JS modules asynchronously. It is more suited for browser based environment.
 
-RequireJS implements the AMD API.
+* RequireJS implements the AMD API.
+* RequireJS loads each dependency by dynamically creating script tags in the head tag (using head.appendChild).
+* RequireJS waits for all dependencies to load, figures out the right order in which to call the functions that define the modules, then calls the module definition functions in the right order.
 
 ### File loading
 
@@ -46,7 +48,6 @@ Example using the config object:
 ### Important tips
 
 * Create only one module per file. Require will use the file path lookup to find the correct file.
-
 
 ## References
 

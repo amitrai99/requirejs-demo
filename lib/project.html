@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RequireJS Demo</title>
-    </head>
-    <body>
-        <h1>RequireJS Demo</h1>
-        <!-- contains the messages from requirejs -->
-        <ol id="msg"></ol>
-        <!-- data-main attribute tells require.js to load
-             scripts/main.js after require.js loads. -->
-        <script data-main="scripts/main" src="scripts/require.js"></script>
-        <script src="scripts/jquery.js"></script>
-    </body>
+  <head>
+    <title>RequireJS Demo</title>
+  </head>
+  <body>
+    <h1>RequireJS Demo</h1>
+    <!-- contains the messages from requirejs -->
+    <ol id="msg"></ol>
+    <!-- 
+    data-main attribute tells require.js to load scripts/main.js after require.js loads. 
+    Note that data-main script is loaded asynchronously be careful about dependencies.
+    -->
+    <script data-main="scripts/main" src="scripts/require.js"></script>
+    <script src="scripts/thirdparty/jquery.js"></script>
+  </body>
 </html>
