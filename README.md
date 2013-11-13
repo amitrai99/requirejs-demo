@@ -43,6 +43,10 @@ Example using the config object:
   });
 </script>
 ```
+### Important tips
+
+* Create only one module per file. Require will use the file path lookup to find the correct file.
+
 
 ## References
 
