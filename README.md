@@ -48,6 +48,7 @@ Example using the config object:
 ### Important tips
 
 * Create only one module per file. Require will use the file path lookup to find the correct file.
+* Filenames with period `.` in them will not be resolved properly. See [this] (http://stackoverflow.com/questions/11182801/why-is-require-js-ignoring-config-baseurl-and-paths)
 
 ## References
 
