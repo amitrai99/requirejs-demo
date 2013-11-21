@@ -12,6 +12,29 @@
     Note that data-main script is loaded asynchronously be careful about dependencies.
     -->
     <script data-main="scripts/main" src="scripts/require.js"></script>
+    <script>
+      /* makUrl is a helper that will create the full path for the templates */
+      function makeUrl(path) {
+        var base = "http://foobar.com/templates/"
+        return base + path;
+      }
+      /* example of using config object with requirejs */
+      var config = {
+        baseUrl: "scripts",
+        paths: {
+          "foo": "some/v1.0", //uses baseUrl and becomes "/another/path/some/v1.0"
+          "bar": "/absolute/bar", //direcly calls /absolute/bar
+          "a": "a.js", //directly calls a.js in the same URL as the document
+          "t1": makeUrl('a/b/t1.hbs'),
+          "t2": makeUrl('cc/dd/ff/t2.hbs'),
+          "t3": makeUrl('qq/v1/r2/t1.hbs')
+        },
+        waitSeconds: 15
+      };
+      console.log(config);
+      //pass the config object to require' config method.
+      require.config(config);
+    </script>
     <script src="scripts/thirdparty/jquery.js"></script>
   </body>
 </html>
